@@ -302,3 +302,29 @@ http://192.168.123.1:10022/udp/225.1.1.159:30120
 http://192.168.123.1:10022/udp/225.1.3.62:30120
 #EXTINF:0 tvg-id="phutho" group-title="Địa phương" tvg-logo="https://i.imgur.com/5OZ2hAB.png",Phú Thọ
 http://192.168.123.1:10022/udp/225.1.3.71:30120
+
+#-------------------K+-------------------#
+#EXTINF:-1, K+ CINE
+https://truyenhinh.click/kcinehd
+#EXTINF:-1, K+ ACTION
+https://truyenhinh.click/kactionhd
+#EXTINF:-1, K+ SPORT1
+https://truyenhinh.click/ksport1hd
+#EXTINF:-1, K+ SPORT2
+https://truyenhinh.click/ksport2hd
+#EXTINF:-1, K+ KIDS
+https://truyenhinh.click/kkidshd
+
+#EXTINF:-1, SCTV15
+https://truyenhinh.click/SCTV15HD
+#EXTINF:-1, SCTV17
+https://truyenhinh.click/SCTV17HD
+
+#EXTINF:-1, ON Sports
+https://truyenhinh.click/vtvcab3
+#EXTINF:-1, ON Sports+
+https://truyenhinh.click/vtvcab6
+#EXTINF:-1, ON Football
+https://truyenhinh.click/vtvcab16
+#EXTINF:-1, ON Sports News
+https://truyenhinh.click/vtvcab18
