@@ -309,9 +309,9 @@ https://truyenhinh.click/kcinehd
 #EXTINF:-1, K+ ACTION
 https://truyenhinh.click/kactionhd
 #EXTINF:-1, K+ SPORT1
-https://truyenhinh.click/ksport1hd
+https://cdn4.tvmienphi.xyz:8444/live/ksport1/index.m3u8?
 #EXTINF:-1, K+ SPORT2
-https://truyenhinh.click/ksport2hd
+https://cdn4.tvmienphi.xyz:8444/live/ksport2/index.m3u8?
 #EXTINF:-1, K+ KIDS
 https://truyenhinh.click/kkidshd
 
