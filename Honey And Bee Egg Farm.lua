@@ -158,14 +158,14 @@ getgenv().Sea = {
         AutoSeedPack = true,
         AutoWater = true,
         AutoHarvest = true,
-        AutoPlants = false,
+        AutoPlants = true,
     },
 
     GameSettings = {
-        FarmingDelay = 5,
+        FarmingDelay = 1,
         TeleportDelay = 1,
         CheckIfAboveLimits = true,
-        PlantLimits = 50,
+        PlantLimits = 5,
     },
 
     Settings = {
