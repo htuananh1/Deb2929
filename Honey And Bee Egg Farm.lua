@@ -33,7 +33,6 @@ getgenv().Sea = {
                 "Uncommon",
                 "Rare",
                 "Legendary",
-                "Mythical",
             }
         },
         Mutations = {
