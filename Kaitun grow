@@ -1,51 +1,38 @@
 getgenv().Sea = {
     Seeds = {
-        Only = true, -- Chỉ mua hạt giống trong danh sách Stock
+        Only = true, -- Only buy seed target, Disable if u want to buy all seeds
         Stock = {
-            "Cacao",
-            "Pepper",
-            "Grape",
-            "Bamboo",
+            "Dragon Fruit",
             "Mango",
-            "Dragonfruit",
             "Mushroom",
+            "Grape",
+            "Pepper",
+            "Cacao",
+            "Beanstalk"
         },
         Sells = {
             Enabled = true,
-            StopPlant = true, -- Dừng trồng khi có số tiền này
-            SellWhen = "10M", -- Bán khi có số tiền này
-            Type = {
-                "Watermelon",
-                "Pumpkin",
-                "Blueberry",
-                "Strawberry",
-                "Tomato",
-                "Cactus",
-                "Coconut",
-                "Carrot",
-                "Corn",
-                "Orange Tulip",
-                "Daffodil",
-                "Apple",
-            },
-            Rarity = {
-                "Common",
-                "Uncommon",
-                "Rare",
-                "Legendary",
+            StopPlant = true, -- Stop planting when you have this amount of money
+            SellWhen = "1M", -- Sell when you have this amount of money
+            Type = {},
+             Rarity = {
+                 "Common",
+                 "Uncommon",
+                 "Rare",
+                 "Legendary",
             }
         },
         Mutations = {
-            Min = "1B",
-            Enabled = true,
+            Min = "1M",
+            Enabled = true, -- Use for Mutations Farm Only
             Mutation = {
-                "Pollinated",
+                "Rainbow",
             }
         }
     },
 
     Eggs = {
-        Only = true,
+        Only = true, -- Only buy egg target, Disable if u want to buy all eggs
         Stock = {
             "Legendary Egg",
             "Mythical Egg",
@@ -55,8 +42,8 @@ getgenv().Sea = {
     },
 
     Gears = {
-        Min = "5M",
-        Only = true,
+        Min = "10M", -- Minimum amount of money to buy gears
+        Only = true, -- Only buy gear target, Disable if u want to buy all gears
         Stock = {
             "Basic Sprinkler",
             "Advanced Sprinkler",
@@ -64,7 +51,7 @@ getgenv().Sea = {
             "Godly Sprinkler",
             "Watering Can",
             "Lightning Rod",
-        },
+        },               
         Active = {
             "Basic Sprinkler",
             "Advanced Sprinkler",
@@ -73,8 +60,8 @@ getgenv().Sea = {
     },
 
     Pets = {
-        PlantEggs = true,
-        HatchEggs = true,
+        PlantEggs = true, -- Enable auto-placing of pets
+        HatchEggs = true, -- Enable auto-hatching of eggs
         Egg = {
             "Bee Egg",
             "Bug Egg",
@@ -87,7 +74,7 @@ getgenv().Sea = {
                 "Common",
                 "Uncommon",
                 "Rare",
-            },
+            }, -- Rarity to sell
             Type = {
                 "Hedgehog","Blood Hedgehog",
                 "Kiwi","Moon Cat",
@@ -98,30 +85,29 @@ getgenv().Sea = {
                 "Mole",
                 "Snail",
             },
-            KeepWeight = 3
+            KeepWeight = 3, -- Keep weight above this value | nil = off
         },
     },
 
     Teams = {
-        EquipBest = true,
-        Team = {
+        EquipBest = true, -- Equip best team ( Just Equip Full Kiwi, Blood Kiwi for fasted egg xd )
+        Team = { -- Disable EquipBest if u want to use this
             "Pet 1",
             "Pet 2",
         },
     },
-
+        
     Events = {
-        Only = true,
+        Only = true, -- Only buy event target, Disable if u want to buy all events
         Type = {
-            "Seed",
             "Seed Pack",
-            "Gear",
             "Egg"
         }
     },
 
     Upgrades = {
-        Type = "All",
+        Type = "All", -- Pet, Egg, All
+
         BlacklistRarity = {
             "Divine",
         }
@@ -130,24 +116,24 @@ getgenv().Sea = {
     Trading = {
         Enable = false,
         TradeTo = {
-            "Ngu",
-            "dUM",
-            "Skibidi3",
+            "Username",
         },
         Type = {
             "Raccoon",
             "Dragonfly",
+            -- "Red Fox",
         },
         Servers = {
-            Enable = true,
+            Enable = false,
             JobId = "",
         }
     },
 
-    SellFruit = {
-        SellIfMax = true,
-        SellingDelay = 30,
-        BlacklistMutations = {
+    SellFruit ={
+        SellIfMax = true, -- Sell if max plants are reached
+        SellingDelay = 30, -- Delay between selling harvested crops
+
+        BlacklistMutations = { -- Will not Sell Mutations in list
             "Pollinated",
             "Gold"
         }
@@ -156,44 +142,47 @@ getgenv().Sea = {
     Misc = {
         AutoSeedPack = true,
         AutoWater = true,
-        AutoHarvest = true,
-        AutoPlants = true,
+        
+        AutoHarvest = true, 
+        AutoPlants = false,
     },
 
     GameSettings = {
-        FarmingDelay = 1,
-        TeleportDelay = 1,
-        CheckIfAboveLimits = true,
-        PlantLimits = 5,
+        FarmingDelay = 1, -- Delay between farming cycles in seconds
+        TeleportDelay = 1, -- Delay between teleports
+        
+        CheckIfAboveLimits = true, -- Will Destroy if Above Limit Plant
+        PlantLimits = 50, -- Global limit for each type of plant
     },
 
     Settings = {
-        FPS = 5,
+        FPS = 5, -- FPS for the game
         TrackStats = true,
-        ReduceLag = true,
+        ReduceLag = true, -- enable for reduce lag
         Server = {
-            HopServer = false,
-            Rejoin = false,
-        },
+            HopServer = false, -- When 15 - 30 min will Hop Server
+            Rejoin = false, -- When 15 - 30 min will Rejoin Server | Just Enabled Only One
+    },
         Webhook = {
             Url = "",
             DiscordId = "",
-            Note = "OMG SO COUL",
+            Note = "TROI DAT OI",
+
             PetCheck = {
-                Only = false,
+                Only = false, -- Only ping if the pet is in the target list
                 Target = {
                     "Mythical",
                     "Divine"
                 },
             },
-            Recheck = {
+            Recheck = { -- Check when rejoin
                 Enabled = true,
-                Ping = true,
-                Type = "Name",
-                Target = {
+                Ping = true, -- Ping if the pet is in the target list
+                Type = "Name", -- Name or Rarity
+                Target = { -- If Type is Rarity, put the rarity ( legendary, mythical, divine, etc.. ) of the pet you want to check
                     "Raccoon",
                     "Dragonfly",
-                    "Red Fox",
+                    "Queen Bee",
                     "Mythical",
                     "Divine",
                 }
