@@ -51,11 +51,6 @@ getgenv().Sea = {
             "Godly Sprinkler",
             "Watering Can",
             "Lightning Rod",
-        },               
-        Active = {
-            "Basic Sprinkler",
-            "Advanced Sprinkler",
-            "Star Caller"
         }
     },
 
